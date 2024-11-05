@@ -13,8 +13,6 @@ Zer0View é um aplicativo moderno para visualização de imagens e vídeos no Wi
 Antes de executar o aplicativo, você precisará ter o seguinte instalado:
 
 - **Python 3.x**
-- **PyQt6**
-- **Pillow**
 - **FFmpeg** (para suporte a vídeos)
 
 ## Instalação
@@ -25,12 +23,28 @@ Antes de executar o aplicativo, você precisará ter o seguinte instalado:
    cd Zer0View
    ```
 
-2. Instale as dependências:
+2. Crie um ambiente virtual:
    ```bash
-   pip install PyQt6 Pillow
+   python -m venv venv
    ```
 
-3. Instale o FFmpeg seguindo as instruções do [site oficial do FFmpeg](https://ffmpeg.org/download.html).
+3. Ative o ambiente virtual:
+
+   - No Windows:
+     ```bash
+     venv\Scripts\activate
+     ```
+   - No macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+4. Instale as dependências a partir do `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Instale o FFmpeg seguindo as instruções do [site oficial do FFmpeg](https://ffmpeg.org/download.html).
 
 ## Uso
 
